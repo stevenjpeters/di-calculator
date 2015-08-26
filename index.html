@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+    <script src="im.calc.js"></script>
+    <script src="animate.js"></script>
+    <link rel="stylesheet" href="calculator.css" />
+    <script>
+      $(function() {
+        $( '#data' ).tabs();
+      });
+    </script>
+</head>
+<body>
+<div id="data">
+    <ul>
+        <li><a href="#monthly">Monthly Expenses</a></li>
+        <li><a href="#lifeIncome">Your Income</a></li>
+    </ul>
+    <div id="monthly">
+    <div class="core">
+        <div class="mainCat">
+            <div class="frame ui-corner-top">
+                <div class="house">
+                </div>
+            </div>
+            <div class="group">
+                <div class="category"><h3>Mortgage/Rent</h3><div class="amount">$<input readonly name="house" id="house" class="monthly" value="0"></div></div>
+                <div class="slide" title="house">10000</div>
+            </div>
+        </div>
+        <div class="mainCat">
+            <div class="frame ui-corner-top">
+                <div class="util">
+                </div>
+            </div>
+            <div class="group">
+                <div class="category"><h3>Utilities</h3><div class="amount">$<input readonly name="utilities" id="util" class="monthly" value="0"></div></div>
+                <div class="slide" title="util">2000</div>
+            </div>
+        </div>
+        <div class="mainCat">
+            <div class="frame ui-corner-top">
+                <div class="groc">
+                </div>
+            </div>
+            <div class="group">
+                <div class="category"><h3>Groceries</h3><div class="amount">$<input readonly name="groceries" id="groc" class="monthly" value="0"></div></div>
+                <div class="slide" title="groc">1500</div>
+            </div>
+        </div>
+        <div class="mainCat">
+            <div class="frame ui-corner-top">
+                <div class="car">
+                </div>
+            </div>
+            <div class="group">
+                <div class="category"><h3>Car Payments</h3><div class="amount">$<input readonly name="car" id="car" class="monthly" value="0"></div></div>
+                <div class="slide" title="car">2000</div>
+            </div>
+        </div>
+        <div class="mainCat">
+            <div class="frame ui-corner-top">
+                <div class="autoIns">
+                </div>
+            </div>
+            <div class="group">
+                <div class="category"><h3>Auto Insurance</h3><div class="amount">$<input readonly name="autoIns" id="autoIns" class="monthly" value="0"></div></div>
+                <div class="slide" title="autoIns">300</div>
+            </div>
+        </div>
+        <div class="mainCat">
+            <div class="frame ui-corner-top">
+                <div class="homeIns">
+                </div>
+            </div>
+            <div class="group">
+                <div class="category"><h3>Home Insurance</h3><div class="amount">$<input readonly name="homeIns" id="homeIns" class="monthly" value="0"></div></div>
+                <div class="slide" title="homeIns">2000</div>
+            </div>
+        </div>
+        <div class="mainCat">
+            <div class="frame ui-corner-top">
+                <div class="healthIns">
+                </div>
+            </div>
+            <div class="group">
+                <div class="category"><h3>Health Insurance</h3><div class="amount">$<input readonly name="healthIns" id="healthIns" class="monthly" value="0"></div></div>
+                <div class="slide" title="healthIns">800</div>
+            </div>
+        </div>
+        <div class="mainCat">
+            <div class="frame ui-corner-top">
+                <div class="lifeIns">
+                </div>
+            </div>
+            <div class="group">
+                <div class="category"><h3>Life Insurance</h3><div class="amount">$<input readonly name="lifeIns" id="lifeIns" class="monthly" value="0"></div></div>
+                <div class="slide" title="lifeIns">300</div>
+            </div>
+        </div>
+        <div class="mainCat">
+            <div class="frame ui-corner-top">
+                <div class="childcare">
+                </div>
+            </div>
+            <div class="group">
+                <div class="category"><h3>Childcare/Education</h3><div class="amount">$<input readonly name="childcare" id="childcare" class="monthly" value="0"></div></div>
+                <div class="slide" title="childcare">10000</div>
+            </div>
+        </div>
+        <div class="mainCat">
+            <div class="frame ui-corner-top">
+                <div class="credit">
+                </div>
+            </div>
+            <div class="group">
+                <div class="category"><h3>Credit Cards/Other Debt</h3><div class="amount">$<input readonly name="creditcards" id="credit" class="monthly" value="0"></div></div>
+                <div class="slide" title="credit">5000</div>
+            </div>
+        </div>
+        <div class="mainCat">
+            <div class="frame ui-corner-top">
+                <div class="other">
+                </div>
+            </div>
+            <div class="group">
+                <div class="category"><h3>Spending Money/Other</h3><div class="amount">$<input readonly name="other" id="other" class="monthly" value="0"></div></div>
+                <div class="slide" title="other">2000</div>
+            </div>
+        </div>
+    </div>
+        </div>
+    <div id="lifeIncome">
+        <div class="mainCat">
+            <div class="iGroup">
+                <div class="category"><h3>Current Age</h3><input class="nField" name="age" id="age" value="0"></div>
+            </div>
+        </div>
+        <div class="mainCat">
+            <div class="iGroup">
+                <div class="category"><h3>Age you plan to retire</h3><input class="nField" name="retirementAge" id="rAge" value="0"></div>
+            </div>
+        </div>
+        <div class="mainCat">
+            <div class="iGroup">
+                <div class="category"><h3>Annual Income</h3><div class="amount">$<input readonly class="annually" name="income" id="income" value="0"></div></div>
+                <div class="slide" id="annIncome"></div>
+            </div>
+        </div>
+    </div>
+    <div class="assessment">
+        <h2>How Much Disability Income Do You Need?<br/><br/></h2>
+        <div class="category"><h3>Monthly Expenses</h3><div class="amount">$<input readonly name="monthly" id="mExpenses" value="0"></div>
+    </div>
+        <div class="category"><h3>Monthly Income (Pre-Tax)</h3><div class="amount">$<input readonly name="mIncome" id="mIncome" value="0"></div>
+        </div>
+        <div class="category"><h3>Potential Income Loss</h3><div class="amount">$<input readonly name="lIncome" id="lIncome" value="0"></div>
+    </div>
+    </div>
+    <div class="clearfix"></div>
+</div>
+</div>
+<script>
+    $(function() {
+        $(".house,.util,.groc,.car,.childcare,.credit,.homeIns,.autoIns,.healthIns,.lifeIns,.other").animateSprite({
+            fps: 11,
+            columns: 5,
+            animations: {
+                phase_1: [0],
+                phase_2: [0, 1, 2, 3, 4, 5, 6],
+                phase_3: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+            },
+            loop: false,
+            autoplay: false
+        });
+        var prev = 0;
+        $('.group').on('mouseup', function() {
+            var anim = $(this).find('input').attr('id');
+            var input = $(this).find('input').val().replace(/,/g,'');
+            var max = $(this).find('.slide').slider('option', 'max');
+            var percent = (input / max) * 100;
+            if ( percent < 33.3 ) {
+                prev = 1;
+                $('.' + anim).animateSprite('play', 'phase_1');
+            }else if ( percent > 33.4 && percent < 66.6 ){
+                $('.' + anim).animateSprite('play', 'phase_2');  
+            }else {
+                $('.' + anim).animateSprite('play', 'phase_3');
+            }
+        });
+    });
+</script>
+</body>
+</html>

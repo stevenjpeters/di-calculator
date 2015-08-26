@@ -1,0 +1,261 @@
+.clearfix {
+    clear: both;
+}
+
+#data {
+    width: 1000px;
+    clear: both;
+    font-family: arial, sans-serif;
+}
+
+#monthly, #lifeIncome {
+    width: 400px;
+    float: left;
+}
+
+#animations {
+    width: 64px;
+    float: left;
+    margin-top: 20px;
+    margin-left: -25px;
+}
+
+.core {
+    float: left;
+    margin-top: 30px;
+    width: 390px;
+}
+
+.mainCat {
+    width: 100%;
+    margin: 2.5px 0;
+}
+
+.group {
+    height: 74px;
+    width: 325px;
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0 15px;
+}
+
+.iGroup {
+    height: 64px;
+    width: 380px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.category {
+    clear: both;
+    height: 30px;
+    
+    h3 {
+        float: left;
+        margin: 0;
+        padding: 0;
+        font-size: 14px;
+    }
+    
+    .amount {
+        float: right;
+        font-size: 14px;
+        
+        input {
+            width: 85px;
+            border: 0;
+            padding: 0;
+            margin: 0;
+        }
+    }
+    
+    input.nField {
+        float: right;
+        width: 30px;
+        border-top: 0;
+        border-left: 0;
+        border-right: 0;
+        border-bottom: 1px solid #006666;
+        padding: 0;
+        font-size: 14px;
+        text-align: center;
+        margin-right: 65px;
+    }
+}
+
+.slide {
+    margin-bottom: 10px;
+}
+
+.ui-tabs {
+    border-radius: 0;
+    border: 0;
+}
+
+.ui-slider-horizontal {
+    height: .25em;
+    background: #006666 !important;
+}
+
+.ui-slider .ui-slider-handle {
+    width: .75em;
+    height: .75em;
+}
+
+.ui-widget-header {
+    border: 0px;
+    background: none;
+}
+
+.ui-tabs-nav li {
+    width: 200px;
+    border: 1px solid #D3D3D4 !important;
+    background-image: none !important;
+    
+    a {
+        text-align: center;
+        width: 163px;
+    }
+}
+
+.ui-state-active, .ui-widget-header .ui-state-active {
+    border: 0;
+    background: #006666;
+    
+    a {
+        color: #FFFFFF; 
+        text-align: center;
+    }
+}
+
+.ui-corner-top {
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+}
+
+.assessment {
+    width: 305px;
+    min-height: 400px;
+    float: left;
+    margin-top: 40px;
+    padding: 0 20px;
+    border-left: 1px solid #006666;
+    
+    h2 {
+        margin: 0;
+        font-size: 22px;
+        color: #006666;
+    }
+}
+
+.house {
+    height: 128px;
+    width: 64px;
+    background-image: url(images/house.png);
+    background-position: 0px 768px;
+    position: absolute;
+    bottom: 5px;
+}
+
+.util {
+    height: 128px;
+    width: 64px;
+    background-image: url(images/utilities.png);
+    background-position: 0px 768px;
+    position: absolute;
+    bottom: 5px;
+}
+
+.groc {
+    height: 128px;
+    width: 64px;
+    background-image: url(images/groceries.png);
+    background-position: 0px 768px;
+    position: absolute;
+    bottom: 5px;
+}
+
+.car {
+    height: 128px;
+    width: 64px;
+    background-image: url(images/cPayments.png);
+    background-position: 0px 768px;
+    position: absolute;
+    bottom: 5px;
+}
+
+.homeIns {
+    height: 128px;
+    width: 64px;
+    background-image: url(images/homeIns.png);
+    background-position: 0px 768px;
+    position: absolute;
+    bottom: 5px;
+}
+
+.autoIns {
+    height: 128px;
+    width: 64px;
+    background-image: url(images/autoIns.png);
+    background-position: 0px 768px;
+    position: absolute;
+    bottom: 5px;
+}
+
+.healthIns {
+    height: 128px;
+    width: 64px;
+    background-image: url(images/healthIns.png);
+    background-position: 0px 768px;
+    position: absolute;
+    bottom: 5px;
+}
+
+.lifeIns {
+    height: 128px;
+    width: 64px;
+    background-image: url(images/lifeIns.png);
+    background-position: 0px 768px;
+    position: absolute;
+    bottom: 5px;
+}
+
+.childcare {
+    height: 128px;
+    width: 64px;
+    background-image: url(images/childCare.png);
+    background-position: 0px 768px;
+    position: absolute;
+    bottom: 5px;
+}
+
+.credit {
+    height: 128px;
+    width: 64px;
+    background-image: url(images/creditCard.png);
+    background-position: 0px 768px;
+    position: absolute;
+    bottom: 5px;
+}
+
+.other {
+    height: 128px;
+    width: 64px;
+    background-image: url(images/other.png);
+    background-position: 0px 768px;
+    position: absolute;
+    bottom: 5px;
+}
+
+.frame {
+    width: 64px;
+    height: 64px;
+    position: relative;
+    overflow: hidden;
+    background-color: #eeeeee;
+    margin: 0 20px 0 -20px;
+    padding: 5px;
+    float: left;
+}
